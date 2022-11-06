@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "font";
+    src: url("../font/fonts.ttf");
+}
+body{
+    font-family: font;
+}
+
+.box2{
+    background: rgba(10, 24, 26, 0.116);
+    display: flex;
+  width: 70vw;
+  margin: 5vw auto;
+  border-radius: 1.3rem;
+  box-shadow:  0px 0px 22px 0px rgb(122 119 119);
+}
+.box2 img{
+    height: 37vw;
+    width: 50vw;
+    filter: saturate(1.6);
+    border-radius: 1.3rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.login{
+    width: 33vw;
+    justify-content: center;
+    text-align: center;
+}
+.headlogin{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.link{
+    text-decoration: none;
+    margin: 1px auto;
+}
+.btn, .bttn {
+    margin-top: 9vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.bttn{
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    scrollbar-arrow-color: aqua red;
+    scrollbar-color: red pink !important;
+     height: 18.5vw;
+     padding: 1vw;
+     margin-top:1vw !important;
+     margin-bottom: -1.7vw !important;
+     /* scrollbar-color: red yellow; */
+}
+.btn a, .bttn a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+#Client, #Lawyer, #Register, #Login{
+    font-family: font;
+    color: aliceblue;
+    font-size: 1.2vw;
+    padding: 0.3vw 2vw;
+    margin-top: 1vw;
+    border-radius: 12px;
+    border: 1px solid grey;
+    background:linear-gradient(45deg ,grey 20%, rgba(0, 0, 0, 0.823) 80%);
+}
+#Client{
+    margin-top: 9vw;
+}
+
+#Client:hover,#Register:hover, #Lawyer:hover, #Login:hover{
+         font-weight: bold;
+         background: white;
+         color: black;
+         transition: all 0.4s;
+}
+
+.layer{
+    height: 37vw;
+    width: 50vw;
+    position: absolute;
+    background:linear-gradient(45deg ,blue 20%, rgb(146, 20, 20) 80%);
+    opacity: 0.4;
+    border-radius: 1.3rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.headlogin{
+    margin-top: 2vw;
+}
+.btn , .bttn{
+    margin-top: 0vw;
+}
+.btn p, .bttn p{
+    text-align: left;
+    margin-bottom: 0;
+}
+.btn input, .bttn input, .bttn select, .btn select{
+    font-family: font;
+    padding: 0.3vw 1vw;
+    border: none;
+    border-radius: 2rem;
+}
+.btn spam, .bttn spam{
+    font-size: 0.7rem;
+}
+#choose_File{
+    width: 10vw;
+    font-size: 0.7rem;
+}
+.btn div, .bttn div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Register{
+    margin-top: 1.6vw;
+}

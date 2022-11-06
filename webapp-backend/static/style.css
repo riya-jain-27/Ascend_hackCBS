@@ -1,0 +1,1725 @@
+* {
+  transition: all 0.3s;
+  margin: 0;
+  top: 0;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("font/fonts.ttf");
+}
+
+body {
+  background-color: white;
+  margin: 0%;
+  font-family: font;
+  /* width: 80vw;
+        margin: auto;
+        font-size: 15px;
+        color:black;
+        font-weight:bold;
+        letter-spacing: 1px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding :1%;  
+        article ki body h 
+        from 367 line*/
+
+  /* login page from 482 */
+
+  /* find lawyer page from 645 */
+
+  /* corporate page from 903 */
+
+  /* article page from 946  */
+
+  /* about us page from 1115 */
+}
+
+h1 {
+  font-size: 1.5vw;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+/* nav bar */
+
+.nav {
+  height: 4.5vw;
+  display: flex;
+  background-color: skyblue;
+  padding: 0.6vw 1vw 0.6vw 5.5vw;
+  width: 100vw;
+  position: fixed;
+  z-index: 15;
+}
+navbar {
+  display: none;
+  z-index: 14;
+}
+.nav-right,
+.nav-left {
+  margin-top: auto;
+  display: flex;
+  list-style: none;
+  z-index: 15;
+}
+
+.nav-elements {
+  width: 82.5vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 15;
+}
+li {
+  padding: 1.2vw 1vw;
+  font-size: 1.16vw;
+  font-weight: bold;
+}
+
+.nav-right,
+.nav-left {
+  margin-top: auto;
+  display: flex;
+  list-style: none;
+}
+
+.nav-elements {
+  width: 82.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  padding: 1.2vw 1vw;
+  font-size: 1.16vw;
+  font-weight: bold;
+}
+
+li:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+#logo2 {
+  background-color: black;
+  justify-items: center;
+  width: 3.25vw;
+  height: 3.25vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24vw;
+  margin: 0.12vw 0.12vw 0.12vw 0.12vw;
+  margin-top: 0%;
+}
+
+#logo2:hover {
+  scale: 1.1;
+}
+
+.logo h6 {
+  font-size: 0.7vw;
+  /* margin-top: -0.3vw; */
+  margin-top: 0.5%;
+  font-weight: bold;
+  /* margin: 1vw 1vw 1vw 1vw ; */
+}
+
+.logo {
+  text-align: center;
+  margin-top: -0.5%;
+}
+
+/* banner */
+
+.banner {
+  background: linear-gradient(45deg, blue, black);
+  height: 20vw;
+  border-radius: 2vw;
+  margin-top: 8vw;
+
+  cursor: pointer;
+}
+.banner img{
+  height: 20vw;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+/* category */
+
+.card {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.imggg {
+  /* height: 65%; */
+  height: 12.7vw;
+  width: 100%;
+  border-radius: 1.4vw;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.ccard {
+  height: 20vw;
+  display: inline-block;
+  width: 15vw;
+  margin: 2%;
+  border-radius: 1.4vw;
+  cursor: pointer;
+  box-shadow: 0px 0px 22px -8px rgb(122 119 119);
+}
+
+.ccard:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 22px 0px rgb(122 119 119);
+}
+
+.ccard div {
+  background-color: white;
+  z-index: 3;
+  height: 35%;
+  margin-top: -11%;
+  border-radius: 1.4vw;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.ccard h1 {
+  font-size: 1.61vw;
+  padding: 2vw 0rem;
+}
+
+/* options */
+.options {
+  padding: 3%;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin-top: 5%;
+}
+
+.options h3 {
+  display: inline;
+}
+
+h3 {
+  font-size: 1.21vw;
+}
+
+.lawyer p {
+  font-size: 1.2vw;
+}
+
+.options button {
+  float: right;
+  height: 2.7vw;
+  width: 6vw;
+  font-size: 1vw;
+  margin-top: 0%;
+  background-color: transparent;
+  border: rgb(11, 140, 219) solid 2px;
+  border-radius: 1vw;
+  color: rgb(11, 140, 219);
+  font-weight: bolder;
+  margin-right: 3%;
+}
+
+.options div,
+.lawyer-list div {
+  text-align: center;
+  padding-top: 4%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+}
+
+.lawyer {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.lawyer img:hover {
+  transform: scale(1.04);
+  /* box-shadow: 4px 2px 15px 0px black; */
+  box-shadow: 0px 0px 15px 8px rgb(122 119 119);
+}
+
+.lawyer img {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 100vw;
+  border: 1px solid black;
+  box-shadow: 0px 0px 22px 4px rgb(122 119 119);
+}
+
+.lawyer-type {
+  font-size: 1.7vw;
+}
+
+.lawyer p {
+  margin-top: -0.6vw;
+  margin-bottom: 0.3vw;
+}
+
+/* lawyer-list */
+
+.lawyer-list {
+  padding: 3%;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin-top: 5%;
+}
+
+.lawyer-list div {
+  text-align: center;
+}
+
+/* article-section */
+.article-section {
+  display: flex;
+  margin-top: 5%;
+  height: 25vw;
+  text-align: left;
+  padding: 3%;
+}
+
+.div1 {
+  width: 40vw;
+  padding: 1%;
+  text-align: left;
+}
+
+.articles {
+  display: flex;
+}
+
+.article {
+  width: 25vw;
+  padding: 1%;
+}
+
+.article img {
+  height: 12vw;
+  width: 20vw;
+  background-color: cyan;
+  border-radius: 1.4vw;
+}
+
+.article img:hover {
+  scale: 1.02;
+  box-shadow: 4px 4px 6px 0px rgb(122 119 119);
+  transition: all 0.3s;
+}
+
+.div1 button {
+  height: 2.7vw;
+  width: 10vw;
+  font-size: 0.9vw;
+  background-color: rgb(67, 171, 235);
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  border: white;
+}
+
+.div1 button:hover {
+  background-color: rgb(141, 199, 235);
+  color: black;
+}
+
+.article h3,
+h5 {
+  margin: 3%;
+}
+
+.article h5 {
+  font-size: 1vw;
+}
+
+/* footer */
+
+/* .footer{
+    display: flex;
+    margin-top: 5%;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-bottom: 0%;
+}
+
+.footer img{
+    height: 50vh;
+    margin-right: 5%;
+    padding: 1%;
+}
+
+.half{
+    text-align: left;
+    padding: 5%;
+}
+
+.footer button{
+    height:60px;
+    width:200px;
+    background-color: transparent;
+    border:rgb(11, 140, 219) solid 2px;
+    border-radius: 5px;
+    color:rgb(11, 140, 219);
+    font-size: large;
+    font-weight: bolder;
+}
+
+.foter{
+    height: 15rem;
+    background: linear-gradient(white, skyblue);
+} */
+
+@media screen and (max-width: 1000px) {
+  .logo h6 {
+    font-size: 1vw;
+    margin-top: -0.7vw;
+  }
+
+  li {
+    font-size: 1.42vw;
+  }
+
+  h5 {
+    font-size: 1.4vw !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .options button {
+    font-size: 1.3vw;
+  }
+
+  h1 {
+    font-size: 2vw;
+  }
+
+  h3 {
+    font-size: 1.4vw;
+  }
+}
+
+/* lawyers profile */
+
+.other {
+  padding: 2%;
+  text-align: justify;
+}
+
+.top {
+  display: flex;
+  margin-top: 2%;
+  padding-right: 2%;
+  /* box-shadow:grey 2px 2px 2px 2px; */
+  /* padding:1%; */
+}
+
+.adv {
+  color: rgb(149, 220, 241);
+  color: rgb(22, 185, 235);
+  color: black;
+  /* font-size:30px; */
+  /* background-color:rgb(149, 220, 241) ;
+    display:inline;
+    padding:1%; */
+}
+
+.profile-picture,
+.info {
+  margin: auto;
+}
+
+.profile-picture img {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  background-image: linear-gradient(lavender, white);
+  /* background-color: lavender; */
+}
+
+.verified {
+  padding: 3%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid black;
+  color: black;
+  font-weight: bolder;
+  background-color: rgb(149, 220, 241);
+  background-color: lightgreen;
+}
+
+.info {
+  width: 60vw;
+}
+
+.profile-summary {
+  padding-top: 1%;
+  padding-right: 4%;
+}
+
+.headingg {
+  font-size: x-large;
+  text-transform: uppercase;
+  color: black;
+  font-size: 20px;
+}
+
+.liist li {
+  display: flex;
+  flex-direction: column;
+}
+
+.liist {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.title {
+  width: 470px;
+}
+
+.aside {
+  /* margin: auto; */
+  text-align: left;
+}
+
+.aside1 {
+  width: 30vw;
+  margin-top: 0%;
+}
+
+.aside i {
+  color: rgb(22, 185, 235);
+  width: 20px;
+  height: 20px;
+}
+
+/* login page */
+
+.box2 {
+  background: rgba(10, 24, 26, 0.116);
+  display: flex;
+  width: 70vw;
+  height: 80vh;
+  /* height: 30rem; */
+  margin: 15vh auto;
+  border-radius: 1.3rem;
+  box-shadow: 0px 0px 22px 0px rgb(122 119 119);
+}
+
+.box2 img {
+  /* height: 37vw; */
+  width: 40vw;
+  filter: saturate(1.6);
+  border-radius: 1.3rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.login {
+  width: 33vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.headlogin {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 1px auto;
+}
+
+.link:hover {
+  transform: none !important;
+}
+
+.btttn,
+.bttn {
+  margin-top: 9vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.bttn {
+  height: 42.5vh;
+  padding: 1vw;
+  margin-top: 1vw !important;
+  margin-bottom: -1.7vw !important;
+  /* scrollbar-color: red yellow; */
+}
+
+#Client:hover,
+#Register:hover,
+#Lawyer:hover,
+#Login:hover {
+  font-weight: bold !important;
+  background: white !important;
+  color: black !important;
+  transform: scale(1) !important;
+  transition: all 0.4s !important;
+}
+
+#Client,
+#Lawyer,
+#Register,
+#Login {
+  font-family: font;
+  color: aliceblue;
+  font-size: 1.2vw;
+  padding: 0.3vw 2vw;
+  margin-top: 1vw;
+  border-radius: 12px;
+  border: 1px solid grey;
+  background: linear-gradient(45deg, grey 20%, rgba(0, 0, 0, 0.823) 80%);
+}
+
+#Register {
+  margin-top: 1.6vw;
+  /* margin: 1.6vw auto 0.2vw auto; */
+  /* width: 80%; */
+}
+
+#Client:hover,
+#Register:hover,
+#Lawyer:hover,
+#Login:hover {
+  font-weight: bold;
+  background: white;
+  color: black;
+  transform: scale(1) !important;
+  transition: all 0.4s;
+}
+
+.layer {
+  /* height: 40vh; */
+  /* width: 40vw; */
+  position: absolute;
+  background: linear-gradient(45deg, blue 20%, rgb(146, 20, 20) 80%);
+  opacity: 0.4;
+  border-radius: 1.3rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.headlogin {
+  margin-top: 2vw;
+}
+
+.btttn,
+.bttn {
+  padding: 1vw 4vw;
+  margin-top: 0vw;
+}
+
+.btttn p,
+.bttn p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.btttn input,
+.bttn input,
+.bttn select,
+.btttn select {
+  font-family: font;
+  padding: 0.3vw 1vw;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btttn spam,
+.bttn spam {
+  font-size: 0.7rem;
+}
+
+#choose_File {
+  width: 10vw;
+  font-size: 0.7rem;
+}
+
+.btttn div,
+.bttn div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Register {
+  margin-top: 1.6vw;
+}
+
+.btttn a:hover {
+  transform: scale(1) !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .headlogin {
+    font-size: 34px;
+  }
+
+  #Client,
+  #Lawyer,
+  #Register,
+  #Login {
+    font-family: font;
+    font-size: 20px;
+  }
+
+  #Login,
+  #Register {
+    /* margin-top: 35px;  */
+    width: 200px;
+    margin: 35px auto 1px auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .box2 {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .login {
+    /* padding: 3rem; */
+    width: 80vw;
+  }
+
+  .box2 img {
+    display: none;
+  }
+
+  #Client,
+  #Lawyer,
+  #Register,
+  #Login {
+    font-size: 18px !important;
+  }
+
+  #Lawyer {
+    margin-top: 3vw;
+  }
+
+  .flogin {
+    margin-top: 15vw;
+    padding: 5vw 20vw;
+  }
+}
+
+/* find lawyer ka page  */
+
+#heading {
+  font-size: 3vw;
+  margin: 4%;
+}
+
+.bannner {
+  margin: 6vh auto;
+  background: linear-gradient(65deg, skyblue, black);
+  padding: 3%;
+  text-align: center;
+  height: 50vh;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 65vw;
+  margin: auto;
+}
+
+.container input {
+  margin: 3px auto;
+}
+
+.searcharea {
+  display: flex;
+}
+
+.locality,
+.keyword {
+  margin: auto;
+  border: black 2px solid;
+  background-color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 6vh;
+  border-radius: 1vw;
+  text-align: center;
+}
+
+.bn {
+  padding-top: 2.5%;
+}
+
+.bn button {
+  margin: 4px 1vw 1vw 1vw;
+  width: 7vw;
+  height: 5vh;
+  font-size: 1.2vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.btn button:hover {
+  background-color: lightgrey;
+  scale: 1.1;
+  font-size: larger;
+}
+
+.locality {
+  margin-right: 0%;
+  width: 20vw;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.keyword {
+  margin-left: 0%;
+  width: 30vw;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.searcharea input {
+  border: white;
+  height: 5vh;
+  outline: none;
+  font-size: 1.2vw;
+}
+
+.locality input {
+  width: 15vw;
+}
+
+.keyword input {
+  width: 25vw;
+}
+
+.popular-searches {
+  margin-left: 20%;
+  width: 60vw;
+  display: table;
+  margin-top: 2%;
+  color: grey;
+}
+
+.popular-searches a {
+  display: table-cell;
+  text-decoration: none;
+  color: grey;
+}
+
+.popular-searches a:hover {
+  scale: 1.1;
+  color: rgb(79, 76, 76);
+}
+
+.outer {
+  margin: auto;
+}
+
+i {
+  color: rgb(0, 0, 0);
+}
+
+input:hover {
+  background-color: white;
+}
+
+.doc {
+  display: flex;
+  padding: 3%;
+  width: 60vw;
+  color: black;
+  box-shadow: grey 2px 2px 3px 3px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.doc div {
+  margin: auto 2%;
+}
+
+.doc img {
+  border-radius: 30vw;
+  height: 15vw;
+  width: 15vw;
+  box-shadow: grey 2px 2px 3px 3px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card button {
+  margin-top: 6%;
+  border: transparent;
+  background-color: transparent;
+  color: transparent;
+  font-size: larger;
+  color: rgb(22, 185, 235);
+  font-weight: bolder;
+}
+
+.card button:hover {
+  scale: 1.1;
+  color: lightskyblue;
+  font-size: x-large;
+}
+
+.normal {
+  text-decoration: none;
+  color: rgb(61, 56, 56);
+  font-weight: bold;
+}
+
+.normal i {
+  width: 10%;
+  height: 1vw;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name {
+  color: rgb(22, 185, 235);
+}
+
+.normal .spaces {
+  margin: 0%;
+  width: 5%;
+}
+
+.availability {
+  margin: 5%;
+  color: green;
+  padding: 5%;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.availability i {
+  margin-right: 2%;
+}
+
+.booking-btn {
+  width: 14vw;
+  height: 3vw;
+  padding: 0.5vw 0;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #14bef0;
+  border: 1px solid #14bef0;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-weight: 700 !important;
+  font-size: 0.9vw;
+  font-family: Camphor, sans-serif;
+  box-sizing: inherit;
+  appearance: auto;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  margin: 0em;
+}
+
+.booking-btn:hover {
+  background-color: #65d8fb;
+}
+
+.availability {
+  width: 16vw;
+}
+
+@media screen and (max-width: 850px) {
+  .searcharea input {
+    font-size: 1.7vw;
+  }
+
+  .bn button {
+    width: 10vw;
+    font-size: 2vw;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .locality {
+    width: 30vw;
+  }
+
+  .keyword {
+    width: 40vw;
+  }
+  .doc {
+    width: 90vw;
+    font-size: 2vw;
+  }
+  .booking-btn {
+    font-size: 1.3vw;
+  }
+  #heading {
+    font-size: 4vw;
+  }
+  #sub-heading h3 {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bannner {
+    margin-top: 2vw;
+  }
+  .searcharea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .locality,
+  .keyword {
+    margin: 1vw auto;
+    width: 80% !important;
+    border-radius: 2vw;
+  }
+  .searcharea input {
+    width: 80%;
+    font-size: 2.5vw;
+  }
+  .bn button {
+    width: 25vw;
+    font-size: 2.5vw;
+  }
+  .info {
+    margin: auto !important;
+  }
+  #heading {
+    font-size: 6.5vw;
+  }
+  #sub-heading h3 {
+    font-size: 3.5vw;
+  }
+  .doc {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    font-size: 3vw;
+    text-align: center;
+  }
+  .ddd {
+    height: 45vw;
+  }
+  .availability {
+    margin: auto !important;
+    width: 60vw;
+  }
+  .profile-photo img {
+    height: 30vw;
+    width: 30vw;
+  }
+  .booking-btn {
+    width: 50vw;
+    height: 6vw;
+    font-size: 2vw;
+  }
+}
+
+/* corporate page  */
+
+.corp {
+  text-align: left;
+  margin: 11vh auto 0vw auto;
+  width: 40vw;
+  min-width: 300px;
+  margin-bottom: 2%;
+  margin-top: 7%;
+}
+
+.formm {
+  padding: 4%;
+  box-shadow: grey 2px 2px 3px 3px;
+  background-color: white;
+  margin-top: 10%;
+  color: rgb(1, 109, 251);
+}
+
+.star {
+  color: red;
+}
+
+.formfill {
+  text-transform: capitalize;
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 1000px) {
+  .corp {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .corp {
+    width: 90vw;
+  }
+}
+
+/* article page  */
+
+.Mainaarticles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 93vw;
+  margin: 10vh auto;
+}
+.aarticle {
+  font-family: font;
+  width: 28.5vw;
+  margin: 3vw auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.locality {
+  width: 30vw;
+}
+
+.keyword {
+  width: 40vw;
+}
+
+/* corporate page  */
+
+.corp {
+  text-align: left;
+  margin: 11vh auto 0vw auto;
+  width: 40vw;
+  min-width: 300px;
+  margin-bottom: 2%;
+  margin-top: 7%;
+}
+
+.formm {
+  padding: 4%;
+  box-shadow: grey 2px 2px 3px 3px;
+  background-color: white;
+  margin-top: 10%;
+  color: rgb(1, 109, 251);
+}
+
+.star {
+  color: red;
+}
+
+.formfill {
+  text-transform: capitalize;
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 1000px) {
+  .corp {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .corp {
+    width: 90vw;
+  }
+}
+
+/* article page  */
+
+.Mainaarticles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 93vw;
+  margin: 10vh auto;
+}
+
+.aarticle {
+  font-family: font;
+  width: 28.5vw;
+  margin: 3vw auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  border-radius: 2vw;
+  box-shadow: 0px 0px 22px -4px rgb(122 119 119);
+  /* background-color: rgba(198, 189, 179, 0.193); */
+  padding: 2vw;
+}
+
+.ArtHeading {
+  margin-top: 1vw;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.aarticle img {
+  height: 15vw;
+  /* width: 16vw; */
+  border-radius: 2vw;
+  box-shadow: 0px 0px 22px -4px rgb(122 119 119);
+}
+
+.content {
+  line-height: 1.6vw;
+  font-size: 1.1vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.tohide {
+  height: calc(3 * 1.6vw);
+}
+
+.tohide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1.6vw;
+  width: 100%;
+  /* background: linear-gradient(90deg, transparent, white); */
+}
+
+.aarticle button {
+  /* padding: 0.6vw 1.9vw; */
+  background: linear-gradient(45deg, grey 20%, rgba(0, 0, 0, 0.823) 80%);
+  box-shadow: 0px 0px 22px 0px rgb(122 119 119);
+  height: 3.1vw;
+  width: 10vw;
+  font-size: 1vw;
+  border-radius: 1vw !important;
+  background-color: rgba(0, 0, 0, 0.533);
+  color: aliceblue;
+  font-family: font;
+}
+
+.modal-title {
+  font-size: 3vw;
+}
+
+.bySome {
+  margin-top: -1vw;
+  padding: 1vw;
+  font-size: 1.1vw;
+  display: flex;
+}
+
+.divvision {
+  display: flex;
+  margin: 0vw 2vw;
+}
+
+.divvision p {
+  padding: 1vw 1.4vw;
+  font-size: 1.03vw;
+  margin-bottom: 0;
+}
+
+.npara {
+  font-size: 1.03vw;
+  padding: 1vw 1.4vw;
+  margin: -1vw 2vw 0vw 2vw;
+}
+
+.divvision img {
+  margin: auto;
+}
+
+.btn-close {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .aarticle {
+    width: 40vw;
+  }
+
+  .mar {
+    font-size: 3vw !important;
+  }
+
+  .aarticle img {
+    height: 23vw;
+  }
+
+  .content {
+    line-height: 2.3vw;
+    font-size: 2vw;
+  }
+
+  .tohide {
+    height: calc(3 * 2.3vw);
+  }
+
+  .tohide::after {
+    height: 2.3vw;
+  }
+
+  .aarticle button {
+    height: 5vw;
+    width: 16vw;
+    font-size: 2.2vw;
+  }
+
+  .bySome {
+    font-size: 1.8vw;
+  }
+
+  .divvision {
+    flex-direction: column;
+  }
+
+  .divvision p {
+    font-size: 1.5vw;
+  }
+
+  .npara {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .divvision p {
+    font-size: 2.7vw;
+  }
+
+  .npara {
+    font-size: 2.7vw;
+  }
+
+  .divvision img {
+    margin-top: 2vw;
+  }
+
+  .bySome {
+    font-size: 2.3vw;
+  }
+
+  .modal-title {
+    font-size: 3.4vw;
+  }
+
+  #exampleModalLabel {
+    font-size: 4vw !important;
+  }
+}
+
+/* about us page  */
+
+.ourMission {
+  margin: 110px auto 0vw auto;
+  width: 70vw;
+  text-align: center;
+}
+
+.ourMission h1 {
+  margin: 2vw;
+  font-size: 2.7vw;
+}
+
+.preHab {
+  background: rgba(128, 128, 128, 0.595);
+  display: flex;
+  align-items: center;
+  margin: 2.5vw 0vw;
+}
+
+.texxt {
+  padding: 0vw 7vw;
+}
+
+.texxt h1 {
+  font-size: 2.7vw;
+  margin: 0vw 0vw 2vw 0vw;
+}
+
+.preHab img {
+  width: 40vw;
+  height: 25vw;
+}
+
+.offer {
+  width: 80vw;
+  margin: 3vw auto;
+}
+
+.offer h1 {
+  font-size: 2.7vw;
+  margin: 0vw 0vw 0vw -2vw;
+}
+
+.offer li {
+  list-style: none;
+  font-weight: 100;
+}
+
+.offer li:hover {
+  transform: none;
+}
+
+.appro {
+  width: 64vw;
+  margin: 4vw auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.appro h1 {
+  font-size: 2.7vw;
+  margin: 2vw auto;
+}
+
+.small {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallbox {
+  width: 16vw;
+  height: 20vw;
+  border: 2px solid #14bef0;
+  font-size: 0.9vw;
+}
+
+.smallbox h3 {
+  font-size: 2.5vw;
+}
+
+.datapriv {
+  text-align: center;
+  width: 70vw;
+  margin: 6vw auto;
+}
+
+.datapriv h1 {
+  font-size: 2.7vw;
+  margin: 4vw auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .abouttus h1 {
+    font-size: 3vw !important;
+  }
+
+  .abouttus p {
+    font-size: 1.6vw;
+  }
+
+  .offer {
+    font-size: 1.6vw;
+  }
+
+  .offer li {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .abouttus h1 {
+    font-size: 8vw !important;
+  }
+
+  .abouttus p {
+    font-size: 4vw;
+  }
+
+  .preHab {
+    margin: 7vw auto;
+    flex-direction: column;
+  }
+
+  .texxt {
+    padding: 5vw 2vw;
+  }
+
+  .preHab img {
+    padding: 3vw;
+    height: 44vw;
+    width: 95vw;
+  }
+
+  .offer {
+    font-size: 4vw;
+  }
+
+  .offer li {
+    font-size: 4vw;
+  }
+
+  .small {
+    flex-direction: column;
+    margin: 4vw auto;
+  }
+
+  .smallbox {
+    margin: 2vw;
+    width: 50vw;
+    height: 40vw;
+    font-size: 3vw;
+  }
+
+  .smallbox h3 {
+    font-size: 5vw;
+  }
+}
+
+/* footer page */
+
+.footer {
+  color: black;
+  height: 40vh;
+  text-align: center;
+  padding: 1%;
+  background-color: skyblue;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer .flogo img {
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.link-section {
+  display: flex;
+  margin: 2%;
+  text-align: left;
+  /* margin-bottom:4%; */
+  justify-content: space-evenly;
+}
+
+.link-section div {
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.div-sec {
+  text-align: left;
+  width: 20%;
+}
+
+.cc {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mainnnn {
+  margin-top: 5%;
+}
+
+.title {
+  width: 10vw;
+}
+
+.liist {
+  text-align: left;
+  margin: auto;
+}
+
+.liist li {
+  text-align: left;
+}
+
+.liist li {
+  display: inline;
+  padding-left: 0%;
+}
+
+.col-sm-10 {
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 90vw;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .aside1 {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .top {
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .info {
+    width: 90%;
+    margin: auto;
+  }
+
+  .liist li {
+    font-size: 13px;
+  }
+}
+
+.info-inner {
+  border: 2px solid black;
+  text-align: left;
+}
+
+.piccc {
+  margin-left: 3%;
+}
+.docc{
+  margin-top: 7%;
+}
+a{
+  color: white;
+}
+/* .info{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  display: inline;
+  border: 1px solid black;
+} */
+
+
+.nav{
+  background-color:black;
+  color:white;
+}
+
+.footer{
+  background-color:black;
+  color:#EFEFEF;
+}
+
+.footer a {
+  color: #EFEFEF;
+}
+
+#logo2 {
+  box-shadow:#EFEFEF 2px 2px 10px 2px;
+}
+
+.fimg{
+  box-shadow:#EFEFEF 2px 2px 10px 2px;
+}
+
+body{
+  background-color: #EFEFEF;
+}
+
+.ccard {
+  height: 18vw;
+}
+
+.div1 button {
+  background-color: black;
+}
+
+.div1 button:hover {
+  background-color: rgb(88, 85, 85);
+  color:white;
+}
+
+.formm {
+  color: black;
+}
+
+.ddd button{
+  color:black;
+  font-weight: bolder;
+}
+
+.ddd button:hover{
+  color: darkgray;
+  color:#C0A080;
+}
+
+.name{
+  color:black;
+  font-weight: bolder;
+}
+
+.booking-btn{
+  background-color: black;
+  border:0px black;
+}
+
+.booking-btn:hover{
+  background-color: darkgray;
+}
+
+.aside i {
+  color: black;
+}
+
+.verified {
+  background-color: lightgrey;
+}
+a{
+  color: white;
+}
+.banner {
+  background: linear-gradient(45deg, #b9b8b8, black);
+}

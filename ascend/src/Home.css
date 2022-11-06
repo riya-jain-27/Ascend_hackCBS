@@ -1,0 +1,105 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* COLOURED SECTION */
+.coloured {
+    /* background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); */
+    background: rgb(195, 34, 141);
+    background: linear-gradient(
+        0deg,
+        rgba(195, 34, 141, 1) 0%,
+        rgba(253, 151, 45, 1) 100%
+    );
+    padding: 3% 7%;
+    border-radius: 0 0 60px 60px;
+}
+/* NAV BAR */
+.logo {
+    width: 12rem;
+}
+.nav-text {
+    font-size: 1.5rem;
+}
+.nav-item {
+    padding: 0 0 0 0.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-family: "Ubuntu Bold", sans-serif;
+}
+/* MAIN BODY */
+.main {
+    padding: 10% 0 0 0;
+}
+h1 {
+    font-family: "Montserrat Black", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+}
+h2 {
+    /* font-family: "Ubuntu", monospace;*/
+    font-family: "Bebas Neue", cursive;
+    color: #fff;
+    /* color: rgba(253, 113, 45, 1); */
+    /* color: linear-gradient(
+        0deg,
+        rgba(195, 34, 174, 1) 0%,
+        rgba(253, 113, 45, 1) 100%
+    ); */
+    font-size: 4rem;
+}
+h3 {
+    font-family: "Ubuntu Bold", sans-serif;
+    font-weight: 900;
+}
+h4 {
+    font-family: "Ubuntu Bold", sans-serif;
+    color: #fff;
+    margin: 4rem 0 0 0;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h5 {
+    font-size: 2rem;
+}
+span {
+    font-family: "Montserrat Black", sans-serif;
+    font-weight: 900;
+}
+.web-img {
+    width: 40rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .main {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .web-img {
+        position: static;
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .web-img {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .web-img {
+        width: 15rem;
+        height: 15rem;
+    }
+}

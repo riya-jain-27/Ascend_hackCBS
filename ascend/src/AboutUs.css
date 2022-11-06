@@ -1,0 +1,83 @@
+/* SUB COLOURED */
+.sub-coloured {
+    background-color: #ff8c32;
+    padding: 1.6rem 2rem;
+    border-radius: 60px 60px 60px 60px;
+}
+/*SUB NOT COLOURED */
+.sub-not-coloured {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 60px 60px 60px 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+img {
+    width: 4rem;
+}
+.whyuss-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.whyus {
+    text-align: right;
+    color: #fff;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.whyus-col-2 {
+    width: 50%;
+    margin: auto 7% auto 0;
+}
+.whyus-col-1 {
+    margin: auto 0 auto 7%;
+    font-size: x-large;
+}
+h5 {
+    font-weight: bolder;
+}
+.whyuss-text {
+    font-family: "Montserrat";
+    font-size: 4rem;
+}
+
+.contact-me {
+    margin: 4rem 0 4rem 0;
+}
+.logo-col {
+    margin: auto;
+}
+.logo-div {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    display: inline-block;
+
+    margin: 1rem;
+    background-color: #f8f7aa;
+}
+.social-logo {
+    width: 5rem;
+    padding: 1rem;
+    margin: auto;
+}
+.p-contact {
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 430px) {
+    .whyuss-text {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    .whyuss-text {
+        font-size: 2.5rem;
+    }
+}

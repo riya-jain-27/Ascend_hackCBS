@@ -1,0 +1,34 @@
+<div class="nav">
+  <a href={% url 'homepage' %}>
+    <div class="logo"><img id="logo2"
+        src="https://thumbs.dreamstime.com/b/law-firm-lawyer-law-office-symbol-isolated-dark-background-simple-vector-logo-law-firm-lawyer-law-office-symbol-isolated-195469545.jpg"
+        alt="logo">
+      <h6>LAWYERSTACK</h6>
+  </a>
+</div>
+<div class="nav-elements">
+  <ul class="nav-left">
+    <a href="{% url 'ClientPage' %}">
+      <li>Find Lawyers</li>
+    </a>
+    <li>Video Consultation</li>
+    {% comment %} <li>Documents Making</li> {% endcomment %}
+  </ul>
+  <ul class="nav-right">
+    <li> <a style="color:white" href="{% url 'lawyer_homepage' %}">Lawyer</a></li>
+
+    <li><a style="color:white" href="{% url 'corporate_page' %}">For Corporate</a></li>
+    <li><a style="color:white" href="{% url 'Contact_us' %}">Need Help</a></li>
+    {% if user.id is none %}
+        {% comment %} <div class="navbar-nav ml-auto py-0"> {% endcomment %}
+    <li><a style="color:white" href="{% url 'client_homepage' %}">Login</a></li>
+    <li><a style="color:white" href="{% url 'clientNewuser' %}">Register</a></li>
+        {% comment %} </div> {% endcomment %}
+    {% else %}
+      <li> <span style="color:orange"><em>{{ user.name }}</em></span></li> 
+      <li> <a style="color:white" href="{% url 'logout' %}">logout</a></li>
+    {% endif %}
+    
+  </ul>
+</div>
+</div>

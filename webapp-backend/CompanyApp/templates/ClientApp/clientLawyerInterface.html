@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}" />
+</head>
+<body>
+
+
+    <article class="leaderboard">
+        <header>
+
+          <h1 class="leaderboard__title"><span class="leaderboard__title--top">Students</span><span class="leaderboard__title--bottom">List</span></h1>
+        </header>
+        <div class="container">
+            <form action="{% url 'CompanyPage' %}" onsubmit="return validate()" enctype="multipart/form-data"
+                method='post'>{% csrf_token %}
+            <div class="searcharea">
+                <div class="locality">
+                    <i class="fa fa-map-marker" aria-hidden="true"> </i>
+                    <input id="omni-searchbox-locality" data-input-box-id="omni-searchbox-locality"
+                        class="c-omni-searchbox c-omni-searchbox--large" autocomplete="off" name="location"
+                        placeholder="Search location.." />
+                </div>
+                <div class="keyword">
+                    <i class="fa fa-search" aria-hidden="false"> </i>
+                    <input id="omni-searchbox-keyword" id="omni-searchbox-keyword"
+                        class="c-omni-searchbox c-omni-searchbox--large" autocomplete="off" name="category"
+                        placeholder="Search Category.." />
+                </div>
+            </div>
+
+                    <input id="omni-searchbox-locality" data-input-box-id="omni-searchbox-locality"
+                        class="c-omni-searchbox c-omni-searchbox--large" autocomplete="off" name="name"
+                        placeholder="Search By Name.." />
+
+
+            <div class="bn">
+                <button type="submit">search</button>
+            </div>
+        </form>
+        </div>
+
+        <main class="leaderboard__profiles">
+            <h1>Accepted Students</h1>
+    {% for student in AStudents %}
+            <a href="{% url 'studentProfileToClient' id=student.id  slug=student.Slug  %}">
+          <article class="leaderboard__profile">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark Zuckerberg" class="leaderboard__picture">
+            <span class="leaderboard__name">{{student.Name}}</span>
+            <span class="leaderboard__value">{{student.CreditScore}}</span>
+          </article>
+                            </a>
+
+            {% endfor %}
+
+
+            <h1>In Progress Students</h1>
+    {% for student in Students %}
+                        <a href="{% url 'studentProfileToClient' id=student.id  slug=student.Slug  %}">
+
+          <article class="leaderboard__profile">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark Zuckerberg" class="leaderboard__picture">
+            <span class="leaderboard__name">{{student.Name}}</span>
+            <span class="leaderboard__value">{{student.CreditScore}}</span>
+          </article>
+                        </a>
+            {% endfor %}
+
+        </main>
+      </div>
+    </article>
+
+</body>
+<script src="{%static 'css/style2.css' %}"></script>
+</html>
+

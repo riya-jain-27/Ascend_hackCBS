@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascend</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+    <div class="box2">
+        <img src="{% static 'images/bglaw.jpg' %}" alt="" srcset="">
+        {% comment %} <img src="{% static 'images/login.png' %}" alt="" srcset=""> {% endcomment %}
+        <div class="layer"></div>
+        <div class="login">
+            <form action="{% url 'company_homepage' %}" onsubmit="return validate()" method='post'>{% csrf_token %}
+
+                <p class="headlogin">Login : Company</p>
+                <a href="{% url 'companyNewuser' %}" class="link"><span style="color:black"><u>Register as New</u></span></a>
+                <div class="btttn">
+                    <p>email</p><input type="email" placeholder="email" name="email">
+                    <p>Password</p><input type="password" placeholder="password" name="password">
+                    <button id="Login" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

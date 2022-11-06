@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/law-firm-lawyer-law-office-symbol-isolated-dark-background-simple-vector-logo-law-firm-lawyer-law-office-symbol-isolated-195469545.jpg">
+  <title>LawyerStack</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <div class="box2">
+        <img src="{% static 'images/bglaw.jpg' %}" alt="" srcset="">
+        {% comment %} <img src="{% static 'images/login.png' %}" alt="" srcset=""> {% endcomment %}
+        <div class="layer"></div>
+        <div class="login">
+            <p class="headlogin">Login : Lawyer</p>
+            <a href="{% url 'studentNewuser' %}" class="link"><span style="color:black"><u>Register as New</u></span></a>
+            <form action="{% url 'student_homepage' %}" onsubmit="return validate()" method='post'>{% csrf_token %}
+
+                <div class="btttn">
+                    <p>email</p><input type="email" placeholder="email" name="email" required>
+                    <p>Password</p><input type="password" placeholder="password" name="password" required>
+                    <button id="Login" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/law-firm-lawyer-law-office-symbol-isolated-dark-background-simple-vector-logo-law-firm-lawyer-law-office-symbol-isolated-195469545.jpg">
+  <title>LawyerStack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+    {% include 'includes/navbar.html' %}
+    {% for lawyer in Lawyers %}
+
+        <div class="doc docc">
+            <div class="card">
+                <div class="">
+                    <div class="profile-photo ">
+                        <img src="{{ lawyer.Picture.url }}" alt="" />
+                    </div>
+                    <a href="{% url 'LawyerProfileToClient' id=lawyer.id  slug=lawyer.Slug  %}">
+                        <button class="Profile_button">
+                            View Profile
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <a href="{% url 'LawyerPage' id=lawyer.id  slug=lawyer.Slug  %}">
+                    <div class="">
+                        <h2 class="normal name">{{lawyer.Name}}</h2>
+                    </div>
+                </a>
+                <a>
+                    <span class="normal"><i class="fa fa-map-marker piccc" aria-hidden="true"> </i>{{lawyer.City}}</span>
+                </a>
+                <div class="">
+                    <div class="">
+                        <span>&NonBreakingSpace;</span>
+                    </div>
+                </div>
+                <div class="normal">
+                    <div><i class="fa fa-graduation-cap" aria-hidden="true"></i>{{lawyer.Location}}
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <span>&NonBreakingSpace;</span>
+                    </div>
+                </div>
+                <div class="normal">
+                    <div class="">
+                        <span><i class="fa fa-book" aria-hidden="true"></i>&NonBreakingSpace;Practice area :
+                            {% for spec in lawyer.lawyerspecifications_set.all %}
+                            {{spec.specification}},
+                            {% endfor %}
+                        </span>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <span>&NonBreakingSpace;</span>
+                    </div>
+                </div>
+                <div class="normal">
+                    <div> <i class="fa fa-credit-card" aria-hidden="true"></i>&NonBreakingSpace;{{lawyer.consultaionFee}}
+                        per Hearing
+                    </div>
+                </div>
+                <div class="">
+                    <div>&NonBreakingSpace;
+                    </div>
+                </div>
+                <div class="normal">
+                    <div>Views <i class="fa fa-star spaces piccc" aria-hidden="true"></i> {{lawyer.Views}}
+                        &NonBreakingSpace;
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    {% endfor %}
+{% include 'includes/footer.html' %}
+</body>
+
+</html>

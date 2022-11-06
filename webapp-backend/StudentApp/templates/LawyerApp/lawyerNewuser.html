@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/law-firm-lawyer-law-office-symbol-isolated-dark-background-simple-vector-logo-law-firm-lawyer-law-office-symbol-isolated-195469545.jpg">
+  <title>LawyerStack</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <div class="boss">
+        <div class="box2">
+            <img src="{% static 'images/bglaw.jpg' %}" alt="" srcset="">
+            {% comment %} <img src="{% static 'images/login.png' %}" alt="" srcset=""> {% endcomment %}
+            <div class="layer"></div>
+            <div class="login">
+                <p class="headlogin">Register : Lawyer</p>
+                <a href="{% url 'student_homepage' %}" class="link"><span style="color:black"><u>
+                Already have an account</u><span></a>
+                <div class="btttn bttn">
+                    <form action="{% url 'studentNewuser' %}" onsubmit="return validate()" enctype="multipart/form-data"
+                        method='post'>{% csrf_token %}
+
+                        <p>Name</p><input type="input" name="name" placeholder="full name" style="width:70%" required>
+                        <p>Gender </p>
+                        <div>
+                            Male<input type="radio" name="Mygender">
+                            Female<input type="radio" name="Mygender">
+                            Others<input type="radio" name="Mygender">
+                        </div>
+                        <p>About</p><input type="text" name="about" placeholder="About" cols="30" rows="30" style="width:70%"  required>
+                        <p>Address</p><input type="input" name="address" placeholder="Address" style="width:70%"  required>
+                        <p>Location</p><input type="input" name="location" placeholder="location" style="width:70%"  required>
+
+                        <p>City</p><input type="input" name="city" placeholder="Your city" style="width:70%"  required>
+
+                        <p>Phone number</p><input type="input" name="phonenumber" placeholder="phone number" style="width:70%"  required>
+                        <p>Category</p><input type="input" name="category" placeholder="Category" style="width:70%" >
+                        <p>Stream</p><input type="input" name="stream" placeholder="Stream" style="width:70%"
+                            required>
+                        <p>Current Class</p><input type="input" name="currentclass" placeholder="currentclass" style="width:70%" required>
+                        <p>Family Income</p><input type="input" name="familyincome" style="width:70%"
+                            placeholder="familyincome" required>
+                        <p>email</p><input type="email" name="email" placeholder="email" style="width:70%"  required>
+                        <p>Password</p><input type="password" name="password" placeholder="password" style="width:70%"  required>
+                        <p>Marks10th</p><input type="input" name="marks10th" placeholder="marks10th" style="width:70%"
+                            required>
+                        <p>Marks12th</p><input type="input" name="marks12th" placeholder="marks12th" style="width:70%"
+                            required>
+                        <p>MarksGPA</p><input type="input" name="marksGPA" placeholder="marksGPA" style="width:70%"
+                            required>
+                        <p>Resume</p><input id="choose_File" type="file" name="resume" placeholder="Resume"
+                            required><br>
+
+                        <p>SupportingPDF</p><input type="file" id="choose_File" name="gradegree"
+                            placeholder="gradegree" required><br>
+
+                        <p>Your Image</p><input type="file" name="picture" id="choose_File" required><br>
+                </div>
+                <div class="btttn">
+                    <button type="submit" id="Register">Register</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
